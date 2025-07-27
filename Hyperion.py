@@ -844,7 +844,7 @@ def main():
     except Exception as e:
         input(f" {Col.Symbol('!', Col.light_gray, Col.dark_gray)} {Col.light_red}Invalid file! Error: {e}{Col.reset}")
         exit()
-    print(stage(f"Rekomendasi: Pilih '{Col.light_gray}n{Col.dark_gray}' untuk tingkat obfusasi tertinggi terhadap deobfuscator.", "INFO", col2 = Col.light_blue))
+    print(stage(f"Rekomendasi: Pilih '{Col.light_gray}n{Col.dark_gray}' untuk tingkat obfuscate tertinggi terhadap deobfuscator.", "INFO", col2 = Col.light_blue))
     skiprenaming = input(stage(f"Skip the renaming of libraries and variables {Col.dark_gray}[{Col.light_gray}y{Col.dark_gray}/{Col.light_gray}n{Col.dark_gray}] -> {Col.reset}", "?")).replace('"','').replace("'","") == 'y'
     print(stage(f"Rekomendasi: Pilih '{Col.light_gray}n{Col.dark_gray}' untuk menambah baris acak dan membungkus kode, mempersulit analisis.", "INFO", col2 = Col.light_blue))
     skipchunks = input(stage(f"Skip the protection of chunks {Col.dark_gray}[{Col.light_gray}y{Col.dark_gray}/{Col.light_gray}n{Col.dark_gray}] -> {Col.reset}", "?")).replace('"','').replace("'","") == 'y'
